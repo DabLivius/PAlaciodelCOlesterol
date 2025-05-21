@@ -19,6 +19,7 @@ const Pasteles = () => {
         <span className='custom-font'>PaCo</span> <img src={coldImg} height="50" width="50" alt="Logo" />
        <nav>
          <ul>
+           <li><Link to="/">Inicio</Link></li>
            <li><Link to="/Tienda">Tienda</Link></li>
            <li><a href="#">Iniciar sesión</a></li>
          </ul>

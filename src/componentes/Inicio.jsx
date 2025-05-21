@@ -1,5 +1,6 @@
 import '../estilos/Inicio.css';
 import 'uikit/dist/css/uikit.min.css';
+import ClimaFooter from './ClimaFooter';
 import UIkit from 'uikit';
 import { Link } from 'react-router-dom';
 import "../estilos/Tienda.css";
@@ -249,6 +250,7 @@ export default function Inicio() {
           </div>
         </div>
         <hr className="uk-divider-icon" />
+        <ClimaFooter />
         <p className="uk-text-center uk-text-small uk-margin-remove-bottom">
           © 2025 Palacio Del Colesterol, LLC
         </p>
