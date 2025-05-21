@@ -23,8 +23,8 @@ import servicio from '../img/Cards6Image.jpg';
 import logoFooter from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.png';
 
 const productos = [
-  { nombre: "EmpanadasF", imagen: prod1 },
-  { nombre: "EmpanadasA", imagen: prod2 },
+  { nombre: "Empanadas", imagen: prod1 },
+  { nombre: "Calzone", imagen: prod2 },
   { nombre: "Buñuelos", imagen: prod3 },
   { nombre: "Pasteles", imagen: prod4 },
   { nombre: "Papa Rellena", imagen: prod5 },
