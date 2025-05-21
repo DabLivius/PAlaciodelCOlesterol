@@ -16,9 +16,10 @@ export default function Tienda() {
   return (
     <>
       <header>  
-        Paco <img src={coldImg} height="50" width="50" alt="Logo" />
+        Paco <img className='uk-margin-left' src={coldImg} height="50px" width="50px" alt="Logo"/>
         <nav>
           <ul>
+            <li><a href="/">Inicio</a></li>
             <li><Link to="/Tienda">Tienda</Link></li>
             <li><a href="#">Iniciar sesión</a></li>
           </ul>

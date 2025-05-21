@@ -8,11 +8,12 @@ import Caliente from './pages/Caliente';
 import Picada  from './pages/Picada';
 import Pollo  from './pages/Pollo';
 import Relleno  from './pages/Relleno';
+import Inicio from './componentes/Inicio';
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Tienda />} />
+        <Route path="/" element={<Inicio />} />
         <Route path="/empanadas" element={<Empanadas />} />
         <Route path="/hamburguesa" element={<Hamburguesa />} />
         <Route path="/papas" element={<Papas />} />
