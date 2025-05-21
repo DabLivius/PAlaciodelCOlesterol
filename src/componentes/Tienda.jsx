@@ -21,7 +21,7 @@ export default function Tienda() {
           <ul>
             <li><a href="/">Inicio</a></li>
             <li><Link to="/Tienda">Tienda</Link></li>
-            <li><a href="#">Iniciar sesión</a></li>
+            <li><a href="/login">Iniciar sesión</a></li>
           </ul>
         </nav>
       </header>

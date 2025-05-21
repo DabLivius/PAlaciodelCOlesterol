@@ -2,7 +2,7 @@ import '../estilos/Inicio.css';
 import 'uikit/dist/css/uikit.min.css';
 import UIkit from 'uikit';
 import { Link } from 'react-router-dom'
-import logo from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.jpg';
+import logo from '../img/Logopropio.jpg';
 import plato from '../img/Heroimage.jpg';
 import ingredientes from '../img/Card1image.jpg';
 import especias from '../img/Card2image.jpg';
@@ -19,6 +19,17 @@ import pagos from '../img/Card5Image.jpg';
 import domicilio from '../img/Card4Image.jpg';
 import servicio from '../img/Cards6Image.jpg';
 import logoFooter from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.jpg';
+
+const productos = [
+  { nombre: "Empanadas tradicionales", imagen: prod1 },
+  { nombre: "Empanadas", imagen: prod2 },
+  { nombre: "Buñuelos", imagen: prod3 },
+  { nombre: "Pasteles", imagen: prod4 },
+  { nombre: "Papa Rellena", imagen: prod5 },
+  { nombre: "Arepa de huevo", imagen: prod6 },
+  { nombre: "Dedos", imagen: prod7 },
+  { nombre: "Pollo a la broaster", imagen: prod8 },
+];
 
 export default function Inicio() {
   return (
@@ -41,7 +52,7 @@ export default function Inicio() {
               <Link to="/Tienda">Tienda</Link>
             </li>
             <li>
-              <a href="#">Iniciar sesión</a>
+              <a href="/login">Iniciar sesión</a>
             </li>
           </ul>
         </nav>
@@ -129,21 +140,43 @@ export default function Inicio() {
       <section className="uk-section">
         <div className="uk-container">
           <h2 className="uk-text-center">Destacados</h2>
-          <div
-            className="uk-child-width-1-4@m uk-grid-small uk-flex-center"
-            uk-grid="true"
-          >
-            {[prod1, prod2, prod3, prod4, prod5, prod6, prod7, prod8].map(
-              (img, idx) => (
-                <div key={idx} style={{margin: "10px", color: "5f259f", backgroundColor: "#5f259f", padding: "8px", borderRadius: "50%", display: "inline-block",}}>
-                  <img src={img} alt={`Producto ${idx + 1}`} className="uk-border-circle" style={{width: "150px",height: "150px", objectFit: "cover",}}/>
-                </div>
-              )
-            )}
+          <div className="uk-child-width-1-4@m uk-grid-small uk-flex-center" uk-grid="true">
+            {productos.map((producto, idx) => (
+              <div key={idx}>
+                <Link to="/Tienda">
+                  <div className="uk-card uk-card-default uk-card-body uk-text-center uk-border-rounded uk-transition-toggle">
+                    <div
+                      style={{
+                        backgroundColor: "#5f259f",
+                        padding: "8px",
+                        borderRadius: "50%",
+                        display: "inline-block",
+                        marginBottom: "10px",
+                      }}
+                    >
+                      <img
+                        src={producto.imagen}
+                        alt={producto.nombre}
+                        className="uk-border-circle"
+                        style={{
+                          width: "150px",
+                          height: "150px",
+                          objectFit: "cover",
+                          cursor: "pointer",
+                        }}
+                      />
+                    </div>
+                    <h4 className="uk-text-bold" style={{ color: "#5f259f" }}>
+                      {producto.nombre}
+                    </h4>
+                  </div>
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-
+      
       <section className="uk-section uk-section-muted">
         <div className="uk-container">
           <h2 className="uk-text-center">
@@ -212,7 +245,7 @@ export default function Inicio() {
           <br />
           pqrs@palaciodelcolesterol.com
         </p>
-        <img src={logoFooter} alt="Logo Footer" height="60" />
+        <img src={logo} alt="Logo Footer" height="60" />
         <p className="uk-text-small">© 2025 Palacio Del Colesterol, LLC</p>
       </footer>
     </>
