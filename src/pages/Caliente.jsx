@@ -3,8 +3,9 @@ import 'uikit/dist/css/uikit.min.css';
 import 'uikit/dist/js/uikit.min.js';
 import 'uikit/dist/js/uikit-icons.min.js';
 import CalienteImg from '../img/Caliente.jpg'
-import coldImg from '../img/cold.jpg'
+import coldImg from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.png'
 import { Link } from 'react-router-dom'
+import '../estilos/Tienda.css'
 import { showSuccessNotification } from '../utils/notifications';
 
 const PerroCaliente = () => {
@@ -18,7 +19,7 @@ const PerroCaliente = () => {
 
     <>
         <header>
-              Paco <img src={coldImg} height="50" width="50" alt="Logo" />
+              <span className='custom-font'>PaCo</span> <img src={coldImg} height="50" width="50" alt="Logo" />
               <nav>
                 <ul>
                   <li><Link to="/Tienda">Tienda</Link></li>

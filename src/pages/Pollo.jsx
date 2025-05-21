@@ -6,10 +6,10 @@ import UIkit from 'uikit';
 window.UIkit = UIkit;
 
 import polloImg from '../img/pollo.jpg';
-import coldImg from '../img/cold.jpg'
+import coldImg from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.png'
 import { Link } from 'react-router-dom'
 import { showSuccessNotification } from '../utils/notifications';
-
+import "../estilos/Tienda.css"
 
 
 const Pollo = () => {
@@ -20,7 +20,7 @@ const handleAgregarCarrito = (e) => {
  return (
     <>
           <header>
-                Paco <img src={coldImg} height="50" width="50" alt="Logo" />
+                <span className='custom-font'>PaCo</span> <img src={coldImg} height="50" width="50" alt="Logo" />
                 <nav>
                   <ul>
                     <li><Link to="/Tienda">Tienda</Link></li>

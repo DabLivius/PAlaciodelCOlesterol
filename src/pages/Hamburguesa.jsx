@@ -3,8 +3,9 @@ import "uikit/dist/css/uikit.min.css";
 import UIkit from "uikit";
 import Icons from "uikit/dist/js/uikit-icons";
 import { Link } from 'react-router-dom'
-import coldImg from '../img/cold.jpg'
+import coldImg from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.png'
 import hamburguesaImg from '../img/hamburguesa.jpg'
+import "../estilos/Tienda.css";
 import { showSuccessNotification } from '../utils/notifications'
 UIkit.use(Icons);
 
@@ -18,7 +19,7 @@ const handleAgregarCarrito = (e) => {
   return (
     <>
      <header>  
-        Paco <img src={coldImg} height="50" width="50" alt="Logo" />
+         <span className='custom-font'>PaCo</span><img src={coldImg} height="50" width="50" alt="Logo" />
         <nav>
           <ul>
             <li><Link to="/Tienda">Tienda</Link></li>

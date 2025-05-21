@@ -1,8 +1,9 @@
 import '../estilos/Inicio.css';
 import 'uikit/dist/css/uikit.min.css';
 import UIkit from 'uikit';
-import { Link } from 'react-router-dom'
-import logo from '../img/Logopropio.jpg';
+import { Link } from 'react-router-dom';
+import "../estilos/Tienda.css";
+import logo from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.png';
 import plato from '../img/Heroimage.jpg';
 import ingredientes from '../img/Card1image.jpg';
 import especias from '../img/Card2image.jpg';
@@ -18,6 +19,7 @@ import prod8 from '../img/Destacados8.jpg';
 import pagos from '../img/Card5Image.jpg';
 import domicilio from '../img/Card4Image.jpg';
 import servicio from '../img/Cards6Image.jpg';
+<<<<<<< HEAD
 import logoFooter from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.jpg';
 
 const productos = [
@@ -31,12 +33,20 @@ const productos = [
   { nombre: "Pollo a la broaster", imagen: prod8 },
 ];
 
+=======
+import logoFooter from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.png';
+>>>>>>> 1997433b3ae05366a559b1f8accbb3b591038608
 export default function Inicio() {
   return (
     <>
       <header>
+<<<<<<< HEAD
         Paco{" "}
         <Link to="/"><img
+=======
+        <span className='custom-font'>PaCo</span>
+        <img
+>>>>>>> 1997433b3ae05366a559b1f8accbb3b591038608
           className="uk-margin-left"
           src={logo}
           height="50px"
