@@ -1,7 +1,7 @@
 // src/componentes/Tienda.jsx
 import { Link } from 'react-router-dom'
 import '../estilos/Tienda.css'
-import coldImg from '../img/cold.jpg'
+import coldImg from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.png'
 import empanadaImg from '../img/empandacarne.jpg'
 import rellenoImg from '../img/relleno.jpg'
 import pastelImg from '../img/pastelfrito.jpg'
@@ -16,7 +16,7 @@ export default function Tienda() {
   return (
     <>
       <header>  
-        Paco <img className='uk-margin-left' src={coldImg} height="50px" width="50px" alt="Logo"/>
+        <span className='custom-font'>PaCo</span> <img className='uk-margin-left' src={coldImg} height="50px" width="50px" alt="Logo"/>
         <nav>
           <ul>
             <li><a href="/">Inicio</a></li>
@@ -27,7 +27,7 @@ export default function Tienda() {
       </header>
 
       <main>
-        <h1>Bienvenido a nuestra tienda de palacio de colesterol</h1>
+        <h1 className='tituloBienvenida'>TIENDA DEL COLESTEROL</h1>
       </main>
 
       <section className="menu">

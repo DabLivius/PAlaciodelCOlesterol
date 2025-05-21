@@ -1,8 +1,8 @@
 import '../estilos/Inicio.css';
 import 'uikit/dist/css/uikit.min.css';
 import UIkit from 'uikit';
-import { Link } from 'react-router-dom'
-import logo from '../img/Logopropio.jpg';
+import { Link } from 'react-router-dom';
+import logo from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.png';
 import plato from '../img/Heroimage.jpg';
 import ingredientes from '../img/Card1image.jpg';
 import especias from '../img/Card2image.jpg';
@@ -19,17 +19,6 @@ import pagos from '../img/Card5Image.jpg';
 import domicilio from '../img/Card4Image.jpg';
 import servicio from '../img/Cards6Image.jpg';
 import logoFooter from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.jpg';
-
-const productos = [
-  { nombre: "Empanadas tradicionales", imagen: prod1 },
-  { nombre: "Empanadas", imagen: prod2 },
-  { nombre: "Buñuelos", imagen: prod3 },
-  { nombre: "Pasteles", imagen: prod4 },
-  { nombre: "Papa Rellena", imagen: prod5 },
-  { nombre: "Arepa de huevo", imagen: prod6 },
-  { nombre: "Dedos", imagen: prod7 },
-  { nombre: "Pollo a la broaster", imagen: prod8 },
-];
 
 export default function Inicio() {
   return (
