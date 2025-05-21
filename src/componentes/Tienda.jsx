@@ -16,7 +16,8 @@ export default function Tienda() {
   return (
     <>
       <header>  
-        <span className='custom-font'>PaCo</span> <img className='uk-margin-left' src={coldImg} height="50px" width="50px" alt="Logo"/>
+        <span className='custom-font'>PaCo</span>
+        <Link to="/"><img className='uk-margin-left' src={coldImg} height="50px" width="50px" alt="Logo"/></Link>
         <nav>
           <ul>
             <li><a href="/">Inicio</a></li>
