@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
-
 function Login() {
   return (
     <div className="uk-container uk-flex uk-flex-center uk-flex-middle" style={{ height: "100vh", background: "#f7f7f7" }}>
       <div className="uk-card uk-card-default uk-card-body uk-border-rounded" style={{ width: 350 }}>
         <div className="uk-text-center">
-          <img src="/logo.png" alt="Logo" width="100" />
+          <Link to="/"><img src="/logo.png" alt="Logo" width="100" /></Link>
           <h3>Iniciar Sesión</h3>
         </div>
         <form>

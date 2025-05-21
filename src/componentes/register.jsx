@@ -28,7 +28,7 @@ function Register() {
     <div className="uk-container uk-flex uk-flex-center uk-flex-middle" style={{ height: "100vh", background: "#f7f7f7" }}>
       <div className="uk-card uk-card-default uk-card-body uk-border-rounded" style={{ width: 400 }}>
         <div className="uk-text-center">
-          <img src="/logo.png" alt="Logo" width="100" />
+          <Link to="/"><img src="/logo.png" alt="Logo" width="100" /></Link>
           <h3>Crear Cuenta</h3>
         </div>
         <form onSubmit={handleSubmit}>

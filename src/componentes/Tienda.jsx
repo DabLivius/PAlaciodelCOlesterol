@@ -16,7 +16,7 @@ export default function Tienda() {
   return (
     <>
       <header>  
-        Paco <img className='uk-margin-left' src={coldImg} height="50px" width="50px" alt="Logo"/>
+        Paco <Link to="/"><img className='uk-margin-left' src={coldImg} height="50px" width="50px" alt="Logo"/></Link>
         <nav>
           <ul>
             <li><a href="/">Inicio</a></li>
@@ -87,6 +87,30 @@ export default function Tienda() {
           <Link to="/Relleno"><button className="buy-button">Comprar</button></Link>
         </div>
       </section>
+      
+      <footer className="uk-section uk-section-small uk-background-muted">
+        {/* Contenedor para texto + logo alineados horizontalmente */}
+        <div className="uk-container uk-flex uk-flex-middle uk-flex-center uk-flex-wrap" style={{ gap: "20px" }}>
+          <div>
+            <h3>Sobre nosotros</h3>
+            <p className="uk-margin-small">
+              contacto: 3100000000 - (608) 8600000 <br />
+              3250000000 - (608) 8300000 <br />
+              dirección: Carrera 2 No 00 - 00 Centro <br />
+              Calle 10 No 000 Zona industrial <br />
+              correo: contacto@palaciodelcolesterol.com <br />
+              pqrs@palaciodelcolesterol.com
+            </p>
+          </div>
+          <div className="uk-flex uk-flex-middle">
+            <img src={coldImg} alt="Logo Footer" height="80" />
+          </div>
+        </div>
+        <hr className="uk-divider-icon" />
+        <p className="uk-text-center uk-text-small uk-margin-remove-bottom">
+          © 2025 Palacio Del Colesterol, LLC
+        </p>
+      </footer>
     </>
   );
 }
