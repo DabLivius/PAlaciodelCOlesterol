@@ -19,7 +19,6 @@ import prod8 from '../img/Destacados8.jpg';
 import pagos from '../img/Card5Image.jpg';
 import domicilio from '../img/Card4Image.jpg';
 import servicio from '../img/Cards6Image.jpg';
-<<<<<<< HEAD
 import logoFooter from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.jpg';
 
 const productos = [
@@ -33,20 +32,13 @@ const productos = [
   { nombre: "Pollo a la broaster", imagen: prod8 },
 ];
 
-=======
-import logoFooter from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.png';
->>>>>>> 1997433b3ae05366a559b1f8accbb3b591038608
 export default function Inicio() {
   return (
-    <>
-      <header>
-<<<<<<< HEAD
+    <><header>
         Paco{" "}
         <Link to="/"><img
-=======
         <span className='custom-font'>PaCo</span>
         <img
->>>>>>> 1997433b3ae05366a559b1f8accbb3b591038608
           className="uk-margin-left"
           src={logo}
           height="50px"
