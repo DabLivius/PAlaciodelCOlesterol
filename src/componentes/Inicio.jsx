@@ -2,6 +2,7 @@ import '../estilos/Inicio.css';
 import 'uikit/dist/css/uikit.min.css';
 import UIkit from 'uikit';
 import { Link } from 'react-router-dom';
+import "../estilos/Tienda.css";
 import logo from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.png';
 import plato from '../img/Heroimage.jpg';
 import ingredientes from '../img/Card1image.jpg';
@@ -23,7 +24,7 @@ export default function Inicio() {
   return (
     <>
       <header>
-        Paco{" "}
+        <span className='custom-font'>PaCo</span>
         <img
           className="uk-margin-left"
           src={logo}
