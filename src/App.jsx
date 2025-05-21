@@ -14,7 +14,7 @@ import Register from './componentes/register';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/login" />} />
+      <Route path="/" element={<Inicio />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/empanadas" element={<Empanadas />} />
