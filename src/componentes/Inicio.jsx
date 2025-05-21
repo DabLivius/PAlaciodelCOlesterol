@@ -18,8 +18,7 @@ import prod8 from '../img/Destacados8.jpg';
 import pagos from '../img/Card5Image.jpg';
 import domicilio from '../img/Card4Image.jpg';
 import servicio from '../img/Cards6Image.jpg';
-import logoFooter from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.jpg';
-
+import logoFooter from '../img/Palaciodelcolesterollogogrande1Iniciarsesion.png';
 export default function Inicio() {
   return (
     <>
