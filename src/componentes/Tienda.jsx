@@ -16,11 +16,7 @@ export default function Tienda() {
   return (
     <>
       <header>  
-<<<<<<< HEAD
-        Paco <Link to="/"><img className='uk-margin-left' src={coldImg} height="50px" width="50px" alt="Logo"/></Link>
-=======
         <span className='custom-font'>PaCo</span> <img className='uk-margin-left' src={coldImg} height="50px" width="50px" alt="Logo"/>
->>>>>>> 1997433b3ae05366a559b1f8accbb3b591038608
         <nav>
           <ul>
             <li><a href="/">Inicio</a></li>
